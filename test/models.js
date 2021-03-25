@@ -111,7 +111,7 @@ describe('User Model', () => {
     const user = UserMock.object;
 
     user.comparePassword('root', (err, isMatched) => {
-      expect(err).to.equal(undefined);
+      expect(err).to.equal(null);
       expect(isMatched).to.equal(true);
       done();
     });
